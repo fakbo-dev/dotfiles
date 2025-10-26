@@ -222,3 +222,6 @@ bar {
 bindsym $mod+Prior exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png --select > ~/screenshots/screenshot_$NOW.png && xclip -selection clip -t image/png ~/screenshots/screenshot_$NOW.png
 bindsym $mod+Next exec NOW=$(date +%d-%b-%Y_%H-%M-%S) && maim --format png > ~/screenshots/screenshot_$NOW.png && xclip -selection clip -t image/png ~/screenshots/screenshot_$NOW.png
 exec_always --no-startup-id feh --bg-scale ~/Downloads/wallpaper.png
+exec --no-startup-id xset s off
+exec --no-startup-id xset -dpms
+exec --no-startup-id xset s noblank
