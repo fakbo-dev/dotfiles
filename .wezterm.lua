@@ -10,11 +10,16 @@ config.animation_fps = 1
 config.cursor_blink_rate = 500
 config.term = "xterm-256color" -- Set the terminal type
 
-config.font = wezterm.font("Maple Mono NF")
+-- config.font = wezterm.font("AnonymicePro Nerd Font")
+config.font = wezterm.font("BigBlueTerm437 Nerd Font")
+-- config.font = wezterm.font("DepartureMono Nerd Font")
+-- config.font = wezterm.font("Unifont")
+-- config.font = wezterm.font("NK57 Monospace")
+-- config.font = wezterm.font("Terminess Nerd Font")
 config.cell_width = 0.9
 config.window_background_opacity = 1
 config.prefer_egl = true
-config.font_size = 20.0
+config.font_size = 19.0
 
 config.window_padding = {
 	left = 0,
