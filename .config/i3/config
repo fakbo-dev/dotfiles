@@ -62,13 +62,18 @@ tiling_drag modifier titlebar
 bindsym $mod+b exec i3-msg "workspace $ws2"; exec flatpak run app.zen_browser.zen
 assign [class="zen"] "2"
 
+#kitra FILE BROWSER
+bindsym $mod+m exec i3-msg "workspace $ws3"; exec ~/Downloads/krita-5.2.13-x86_64.AppImage
+assign [class="krita"] "3"
+
+# OPEN PDF
+exec i3-msg "workspace $ws4"; exec xreader
+
+assign [class="Xreader"] "4"
 #DISCORD 
 bindsym $mod+n exec i3-msg "workspace $ws5"; exec discord
 assign [class="discord"] "5"
 
-#NEMO FILE BROWSER
-bindsym $mod+m exec i3-msg "workspace $ws3"; exec ~/Downloads/krita-5.2.13-x86_64.AppImage
-assign [class="krita"] "3"
 # start a terminal
 bindsym $mod+Return exec flatpak run org.wezfurlong.wezterm
 
