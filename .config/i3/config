@@ -67,8 +67,6 @@ bindsym $mod+m exec i3-msg "workspace $ws3"; exec ~/Downloads/krita-5.2.13-x86_6
 assign [class="krita"] "3"
 
 # OPEN PDF
-exec i3-msg "workspace $ws4"; exec xreader
-
 assign [class="Xreader"] "4"
 #DISCORD 
 bindsym $mod+n exec i3-msg "workspace $ws5"; exec discord
