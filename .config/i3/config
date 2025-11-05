@@ -69,9 +69,8 @@ assign [class="krita"] "3"
 # OPEN PDF
 assign [class="Xreader"] "4"
 #DISCORD 
-# bindsym $mod+n exec i3-msg "workspace $ws5"; exec discord
-bindsym $mod+n exec i3-msg "workspace $ws5"; exec flatpak run org.wezfurlong.wezterm start -- ~/Downloads/discordo/discordo
-# assign [class="discord"] "5"
+bindsym $mod+n exec i3-msg "workspace $ws5"; exec discord
+assign [class="discord"] "5"
 
 # start a terminal
 bindsym $mod+Return exec flatpak run org.wezfurlong.wezterm
