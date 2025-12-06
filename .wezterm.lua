@@ -5,13 +5,13 @@ local config = wezterm.config_builder()
 --local mux = wezterm.mux
 config.bypass_mouse_reporting_modifiers = "ALT"
 config.front_end = "OpenGL"
-config.max_fps = 144
+config.max_fps = 180
 config.animation_fps = 1
-config.cursor_blink_rate = 500
+-- config.cursor_blink_rate = 500
 config.term = "xterm-256color" -- Set the terminal type
 
--- config.font = wezterm.font("AnonymicePro Nerd Font")
-config.font = wezterm.font("BigBlueTerm437 Nerd Font")
+config.font = wezterm.font("AnonymicePro Nerd Font")
+-- config.font = wezterm.font("BigBlueTerm437 Nerd Font")
 -- config.font = wezterm.font("DepartureMono Nerd Font")
 -- config.font = wezterm.font("Unifont")
 -- config.font = wezterm.font("NK57 Monospace")
