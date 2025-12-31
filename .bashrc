@@ -83,6 +83,7 @@ alias cls='clear'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias cpn='xclip -select clipboard'
 alias cdf='cd $(~/.local/scripts/tmux-sessionizer  --dir-only)'
+alias vim='nvim'
 
 # Your custom bindings
 bind '"\C-f":"tmux-sessionizer\n"'
@@ -90,12 +91,7 @@ bind '"\C-f":"tmux-sessionizer\n"'
 # fzf integration
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# MANPAGER configuration based on terminal
-if [ -n "$WEZTERM_EXECUTABLE" ]; then
-    export MANPAGER="less"
-else
-    export MANPAGER='nvim +Man!'
-fi
+export MANPAGER='nvim +Man!'
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
