@@ -63,7 +63,7 @@ bindsym $mod+b exec i3-msg "workspace $ws2"; exec flatpak run app.zen_browser.ze
 assign [class="zen"] "2"
 
 #kitra FILE BROWSER
-bindsym $mod+m exec i3-msg "workspace $ws3"; exec ~/Downloads/krita-5.2.13-x86_64.AppImage
+bindsym $mod+m exec i3-msg "workspace $ws3"; exec ~/Downloads/krita-5.2.14-x86_64.AppImage
 assign [class="krita"] "3"
 
 # OPEN PDF
