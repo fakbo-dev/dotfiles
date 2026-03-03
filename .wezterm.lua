@@ -10,8 +10,8 @@ config.animation_fps = 1
 -- config.cursor_blink_rate = 500
 config.term = "xterm-256color" -- Set the terminal type
 
-config.font = wezterm.font("AnonymicePro Nerd Font")
--- config.font = wezterm.font("BigBlueTerm437 Nerd Font")
+-- config.font = wezterm.font("AnonymicePro Nerd Font")
+config.font = wezterm.font("BigBlueTerm437 Nerd Font")
 -- config.font = wezterm.font("DepartureMono Nerd Font")
 -- config.font = wezterm.font("Unifont")
 -- config.font = wezterm.font("NK57 Monospace")
@@ -94,4 +94,31 @@ config.window_frame = {
 config.window_decorations = "NONE | RESIZE"
 config.default_prog = { "/bin/bash", "-l" } -- or your preferred shell
 config.initial_cols = 80
+config.font_rules = {
+	{
+		intensity = "Bold",
+		italic = false,
+		font = wezterm.font("BigBlueTerm437 Nerd Font"),
+	},
+	{
+		intensity = "Bold",
+		italic = true,
+		font = wezterm.font("BigBlueTerm437 Nerd Font"),
+	},
+	{
+		intensity = "Normal",
+		italic = true,
+		font = wezterm.font("BigBlueTerm437 Nerd Font"),
+	},
+	{
+		intensity = "Half",
+		italic = false,
+		font = wezterm.font("BigBlueTerm437 Nerd Font"),
+	},
+	{
+		intensity = "Half",
+		italic = true,
+		font = wezterm.font("BigBlueTerm437 Nerd Font"),
+	},
+}
 return config
