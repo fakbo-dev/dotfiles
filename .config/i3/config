@@ -70,7 +70,9 @@ assign [class="krita"] "3"
 assign [class="Evince"] "4"
 bindsym $mod+n exec i3-msg "workspace $ws4"; exec evince
 assign [class="discord"] "5"
-
+# Spotify
+assign [class="Spotify"] "6"
+bindsym $mod+c exec i3-msg "worskpace $ws6"; exec flatpak run com.spotify.Client
 # start a terminal
 bindsym $mod+Return exec wezterm
 # bindsym $mod+Return exec i3-sensible-terminal
